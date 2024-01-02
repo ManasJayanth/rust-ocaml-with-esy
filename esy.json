@@ -1,0 +1,25 @@
+{
+  "esy": {
+    "buildEnv": {
+      "AR": "#{os == 'windows' ? 'x86_64-w64-mingw32-ar': 'ar'}",
+      "CC": "#{os == 'windows' ? 'x86_64-w64-mingw32-gcc': 'cc'}"
+    },
+    "exportedEnv": {
+      "PATH": {
+        "scope": "global",
+        "val": "#{self.root}/target/debug:$PATH"
+      }
+    },
+    "build": "cargo build",
+    "buildsInSource": true
+  },
+  "scripts": {
+    "hello": "esy cargo run"
+  },
+  "dependencies": {
+    "esy-rustup": "^1.56.1"
+  },
+  "resolutions": {
+    "esy-rustup": "esy-packages/esy-rustup:esy.json#16c0801743a43f86d13f228ff0b2167015ffd2af"
+  }
+}

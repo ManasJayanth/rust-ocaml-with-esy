@@ -1,0 +1,10 @@
+[package]
+name = "rust-ocaml-with-esy"
+version = "0.1.0"
+authors = ["Manas Jayanth <3097018+ManasJayanth@users.noreply.github.com>"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rand = "0.8.5"

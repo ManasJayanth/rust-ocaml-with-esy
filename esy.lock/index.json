@@ -1,0 +1,33 @@
+{
+  "checksum": "a21887ea81679d23bae94aa43f0facee",
+  "root": "rust-ocaml-with-esy@link-dev:./esy.json",
+  "node": {
+    "rust-ocaml-with-esy@link-dev:./esy.json": {
+      "id": "rust-ocaml-with-esy@link-dev:./esy.json",
+      "name": "rust-ocaml-with-esy",
+      "version": "link-dev:./esy.json",
+      "source": { "type": "link-dev", "path": ".", "manifest": "esy.json" },
+      "overrides": [],
+      "dependencies": [
+        "esy-rustup@archive:https://github.com/rust-lang/rustup/archive/refs/tags/1.24.2.tar.gz#sha1:979e8139734d39313b0147e0db3bfd2675f49507@92c789f8"
+      ],
+      "devDependencies": []
+    },
+    "esy-rustup@archive:https://github.com/rust-lang/rustup/archive/refs/tags/1.24.2.tar.gz#sha1:979e8139734d39313b0147e0db3bfd2675f49507@92c789f8": {
+      "id": "esy-rustup@archive:https://github.com/rust-lang/rustup/archive/refs/tags/1.24.2.tar.gz#sha1:979e8139734d39313b0147e0db3bfd2675f49507@92c789f8",
+      "name": "esy-rustup",
+      "version": "archive:https://github.com/rust-lang/rustup/archive/refs/tags/1.24.2.tar.gz#sha1:979e8139734d39313b0147e0db3bfd2675f49507",
+      "source": {
+        "type": "install",
+        "source": [
+          "archive:https://github.com/rust-lang/rustup/archive/refs/tags/1.24.2.tar.gz#sha1:979e8139734d39313b0147e0db3bfd2675f49507"
+        ]
+      },
+      "overrides": [
+        "esy.lock/overrides/92c789f84b4eaf84a51bf310f246de8f/esy.json"
+      ],
+      "dependencies": [],
+      "devDependencies": []
+    }
+  }
+}
