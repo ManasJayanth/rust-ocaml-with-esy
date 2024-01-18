@@ -12,11 +12,11 @@
 }
 ```
 
-On newer MacOS, you'll need `1.56` which is not published on NPM. You could use the github repository formula directly with,
+On newer MacOS, `1.75` is the recommended version, which is not published on NPM. You could use the github repository formula directly with,
 
 ```json
   "resolutions": {
-    "esy-rustup": "esy-packages/esy-rustup:esy.json#16c0801743a43f86d13f228ff0b2167015ffd2af"
+    "esy-rustup": "esy-packages/esy-rustup:esy.json#bd83f59efa55da39ba49b155d867e8ae55e3df1"
   }
 }
 ```
