@@ -25,6 +25,16 @@ On newer MacOS, `1.75` is the recommended version, which is not published on NPM
 
 3. Run, `esy cargo run` to run the hello world program.
 
+4. If you're using [`ocaml-rust`](https://docs.rs/ocaml/latest/ocaml/#:~:text=ocaml%2Drs%20is%20a%20library,interact%20with%20the%20OCaml%20runtime), you'll also need to set `OCAML_WHERE_PATH` because of how `ocaml-rust` configures ocaml toolchain.
+
+```json
+  "esy": {
+    "buildEnv": {
+      "OCAML_WHERE_PATH": "#{ocaml.lib}/ocaml",
+    },
+  }
+```
+
 4. Optionally add `#{self.root}/target/debug` to [`exportedEnv`](https://esy.sh/docs/environment/#test-environment-exported-environment) and run the program with `esy x rust-ocaml-with-esy`
 
 ```json
